@@ -1,221 +1,284 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
+<html lang="en">
 
-<html>
-    <head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Biz Connect</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Tera:wght@500&family=Roboto:wght@300&display=swap" rel="stylesheet">
 
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-        <link rel="stylesheet" href="style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lexend+Tera:wght@500&family=Roboto:wght@300&display=swap" rel="stylesheet">
-      </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-LKJ9ERCKL8"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LKJ9ERCKL8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-LKJ9ERCKL8');
+    </script>
 
-  gtag('config', 'G-LKJ9ERCKL8');
-</script>
-
-      <style>/*fonts*/ 
-      
-      h1{font-size: 70px; color: #522d92;
-        align-items: center;font-style: bold;margin-left: 30%;
-        margin-top: 100px;
-        margin-bottom:100px;
-        font-weight: bolder;
-      }
-
-      .blues{background-color: #3a1879;}
-
-        
-  p{ font-size:50px;}
-      
-        h6{font-size: 30px;
-          color: azure;
+    <style>
+        body {
+            background-image: url('bac.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: 0;
+            color: #fff;
+            font-family: 'Roboto', sans-serif;
         }
-     h2{}
-     h3 {font-size: 55px;
-        color:aliceblue;
-        margin:200px;
-        margin-bottom: 300px;
-    
-    }
-    .card-title{font-size: 50px;
-               color:#3a1879 ;
-               margin-left: 20% ;
-    }
-.card-text{font-size: 80px;
-              font-style: ;
-            background-color: rgba(201, 187, 187, 0.116);
-         
-           color: azure;
-}
-          .deco{ margin-left:20px;
-              margin-right:20px;
-                position: center;
-                padding-left:10px;
-                padding-right: 10px;
-          }
 
-    .blues p{font-size: 50px;
-      margin-left: 10px;
-      margin-right: 10px; 
-      
+        nav {
+            background-color: rgb(173, 167, 167);
+            height: 80px;
+        }
 
+        .navbar-brand img {
+            width: 150px;
+            height: auto;
+        }
 
+        h1, h3 {
+            font-family: 'Lexend Tera', sans-serif;
+        }
 
-      
+        h1 {
+            font-size: 2.5rem;
+            color: #522d92;
+            text-align: center;
+            font-weight: bolder;
+            margin: 50px 0;
+        }
 
-    }
-            
-        .navbar-brand img{width: 200px;height: 100px;}
-        nav{background-color:rgb(173, 167, 167);
-        height: 100px;}
-        .me{ align-items: left;}
-      
-        /*background image */
-       body { background-image: url('bac.jpg');
-       background-size: cover;
-      background-repeat: no-repeat;
-      position: relative;
-      height: 400px;
-      width: 100%;
-    opacity: 4;
-    
-      }
-      .blues{
-        background-color:#503385;
-        color: rgb(242, 242, 247);
-        width: 100%;
-        height: 700px;
-        margin-bottom: 100px;
+        h3 {
+            font-size: 1.5rem;
+            color: aliceblue;
+            text-align: center;
+            margin: 50px 0;
+        }
 
-      }
-    
-      .card{width: 100%;
-            height: 700px;
+        .blues {
+            background-color: #503385;
+            color: rgb(242, 242, 247);
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .blues p {
+            font-size: 1.25rem;
+        }
+
+        .card {
             background-color: gray;
-            margin-top: 95px;
-            margin-bottom: 95px;
-      }
-      .card img{width: 80px;
-                height: 160px; 
-                margin-left: 45%;    
-                
-      }
-      .row row-cols-1 row-cols-md-2 g-4{display: flex;flex: row;}
-         
-     .form{background-color:#503385;
-      padding-bottom: 100px;
-      margin-bottom: 100px;
-      }
+            border: none;
+            margin: 15px;
+        }
 
-     .form input{width:40%;
-                 
-      margin-left: 40%;
-    
-    }
-    .form label {
-                 
-                 margin-left: 40%;}
+        .card-img-top {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto;
+        }
 
-.card-text
-                            
-textarea {margin-left: 40px;
-          margin-right: 60px;
-}
-footer{height: 500px;
-     background-color:black ;      
-       
+        .card-body {
+            text-align: center;
+        }
 
+        .card-title {
+            font-size: 1.25rem;
+            color: #3a1879;
+        }
 
-      }
-      </style>
-    <body class="deco">
-       <header><nav>
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img src="GBZ.png" alt=""><div class="me"> <div></div></a>
-        </div></div>
-      </nav></header>
+        .card-text {
+            font-size: 1rem;
+            color: azure;
+        }
+
+        .form {
+            background-color: #503385;
+            padding: 40px;
+            margin-bottom: 100px;
+            color: #fff;
+            text-align: center;
+        }
+
+        .form input,
+        .form textarea {
+            width: 100%;
+            max-width: 600px;
+            margin: 10px auto;
+        }
+
+        footer {
+            background-color: black;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer img {
+            width: 40px;
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        @media (min-width: 768px) {
+            .navbar-brand img {
+                width: 200px;
+            }
+
+            h1 {
+                font-size: 3rem;
+            }
+
+            .blues p {
+                font-size: 1.5rem;
+            }
+
+            .card-title {
+                font-size: 1.5rem;
+            }
+
+            .card-text {
+                font-size: 1.25rem;
+            }
+        }
+
+        @media (min-width: 992px) {
+            nav {
+                height: 100px;
+            }
+
+            .navbar-brand img {
+                width: 250px;
+            }
+
+            h1 {
+                font-size: 4rem;
+            }
+
+            .blues p {
+                font-size: 2rem;
+            }
+
+            .card-title {
+                font-size: 2rem;
+            }
+
+            .card-text {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="GBZ.png" alt="Global Biz Connect"></a>
+            </div>
+        </nav>
+    </header>
+
     <main>
-      <article><section>
-        <div><h3>"We offer a range of startup packages and brand enhancements to cater to emerging businesses”</h3></div> >
-          <div><h1>ABOUT US</h1></div>
-      </section></article>
-      <section class="blues"><p>Global Biz Connect, a youthful and energetic digital marketing agency, takes pride in providing affordable solutions tailored to startups and small businesses. Our startup packages are designed to give your business a solid marketing foundation, while our brand enhancements breathe new life into your brand's identity and visibility</p></section>
-<section>
- <article>     <div><h1>DIGITA SERVICES</h1></div></article>
-  
-    <div class="col">
-      <div class="card">
-        <img src="search-engine.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">SMALL BUSINESS ,BRAND &<br> STARTUP SEO SERVICES</h5>
-          <p class="card-text">Your startup or small business needs a strong online presence to compete in the digital realm. However, not all businesses have the budget for extensive SEO strategies. But here's the exciting part - we've got just the thing to help you out!</p>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card">
-        <img src="smartphone.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">        MOBILE APP DESIGN </h5>
-          <p class="card-text">Looking for stunning designs to elevate your business? We specialize in creating visually striking and captivating web and mobile app designs. Our team is skilled at crafting innovative and eye-catching designs that will make your brand stand out. Whether it's for iOS or Android platforms, we've got you covered with our exceptional design services.</p>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card">
-        <img src="monitor.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title"> WEBSITE ,WEBAPP DESIGN & DEVELOPMENT</h5>
-          <p class="card-text">Ready for a modern and impactful website to boost your online presence? We specialize in designing unique, user-friendly, and responsive websites that adapt seamlessly to all screen sizes, from computers to tablets and smartphones. Our goal is to create a visually stunning website that maximizes your online visibility and delivers a seamless user experience across devices.</p>
-        </div>
-      </div>
-      </div>
-      <div class="col">
-        <div class="card">
-          <img src="worldwide.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">GOOGLE ADs</h5>
-            <p class="card-text">Looking to drive more relevant traffic to your website and boost your conversion rate? Look no further! As a certified Google Partner, we specialize in setting up and managing paid search engine advertising campaigns. Our expertise lies in increasing visitor numbers by strategically targeting your desired audience. Let us help you maximize your online visibility and achieve higher conversion rates through effective paid advertising.</div>
-        </div>
-    </div>
-    
-    </div>
-  </div>  
-  <div class="form"><div class="mb-3">
-    <label for="FormControlInput1" class="form-label">Name</label>
-    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Name">
-  </div>
-  <div class="mb-3">
-    <label for="exampleFormControlInput1" class="form-label">Email address</label>
-    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-  </div>
-  <div class="mb-3">
-    <label for="exampleFormControlTextarea1" class="form-label">Form filled</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-  </div></div>
-</section>
+        <section>
+            <div class="container">
+                <h3>"We offer a range of startup packages and brand enhancements to cater to emerging businesses”</h3>
+                <h1>ABOUT US</h1>
+            </div>
+        </section>
+
+        <section class="blues">
+            <p>Global Biz Connect is a dynamic digital marketing agency dedicated to providing cost-effective solutions for startups and small businesses. Our services include comprehensive startup packages to establish a strong marketing foundation and brand enhancements to elevate your business's identity and online presence.</p>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+                    <div class="col">
+                        <div class="card">
+                            <img src="search-engine.png" class="card-img-top" alt="SEO Services">
+                            <div class="card-body">
+                                <h5 class="card-title">SEO Services for Small Businesses</h5>
+                                <p class="card-text">Strengthen your online presence with our affordable SEO solutions tailored for startups and small businesses. Our strategies are designed to help you compete effectively in the digital marketplace.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="smartphone.png" class="card-img-top" alt="Mobile App Design">
+                            <div class="card-body">
+                                <h5 class="card-title">Mobile App Design</h5>
+                                <p class="card-text">Enhance your business with visually stunning and user-friendly mobile app designs. Our team specializes in creating designs that make your brand stand out on both iOS and Android platforms.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="monitor.png" class="card-img-top" alt="Website Design & Development">
+                            <div class="card-body">
+                                <h5 class="card-title">Website Design & Development</h5>
+                                <p class="card-text">Create a lasting impression with a modern, responsive website. We design websites that are not only visually appealing but also optimized for all devices, ensuring a seamless user experience.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="worldwide.png" class="card-img-top" alt="Google Ads">
+                            <div class="card-body">
+                                <h5 class="card-title">Google Ads Management</h5>
+                                <p class="card-text">Drive targeted traffic to your website with our expertly managed Google Ads campaigns. As a certified Google Partner, we focus on maximizing your ROI through strategic advertising.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="form">
+                <form>
+                    <div class="mb-3">
+                        <label for="nameInput" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="nameInput" placeholder="Your Name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="emailInput" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="emailInput" placeholder="name@example.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="messageTextarea" class="form-label">Message</label>
+                        <textarea class="form-control" id="messageTextarea" rows="3" placeholder="Your message here"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-light">Submit</button>
+                </form>
+            </div>
+        </section>
     </main>
-    <footer><div class="container text-center">
-      <div class="row">
-        <div class="col">
-           <h6>About us</h6>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h6>About Us</h6>
+                </div>
+                <div class="col">
+                    <h6>Packages</h6>
+                </div>
+                <div class="col">
+                    <h6>Contact</h6>
+                </div>
+                <div class="col">
+                    <h6>Follow Us</h6>
+                </div>
+            </div>
         </div>
-        <div class="col">
-           <h6>packages</h6>
-        </div>
-        <div class="col">
-        <h6>Social Media</h6>
-        <img src="facebook.png" alt="" width="80px" height="120px">
-     <a href="tel:082 7636392"><img src="whatsapp.png" alt="" width="80px" height="120px"></a>
-        <img src="youtube.png" alt="" width="80px" height="120px"></footer><img src="https://t.bkit.co/w_648c01f1edd12.gif" />
-        </div>
-      </div>
-    </div>
-    </body>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6VjzjN1Rr1I4uW7DsB4LIA11Zkj/ZjxSfgE6rCmH5UssqF+U1J3uRo" crossorigin="anonymous"></script>
+</body>
+
 </html>
